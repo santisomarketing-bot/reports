@@ -44,6 +44,13 @@
   .stat .v{font-size:34px;line-height:1;}
   .stat .l{font-size:11.5px;color:var(--text-faint);margin-top:6px;letter-spacing:.02em;}
 
+  .sort-bar{display:flex;align-items:center;gap:10px;margin:22px 0 -6px;font-size:12.5px;color:var(--text-faint);}
+  .sort-bar select{
+    background:var(--surface);border:1px solid var(--border);color:var(--text);
+    font-family:inherit;font-size:12.5px;padding:7px 10px;border-radius:8px;
+  }
+  .sort-bar select:focus{outline:2px solid var(--gold, var(--amber, #999));outline-offset:1px;}
+
   section{margin-bottom:44px;}
   section > h2{font-size:20px;margin-bottom:4px;}
   section > .sub{font-size:13px;color:var(--text-faint);margin-bottom:20px;}
@@ -126,17 +133,25 @@
   </div>
 </div>
 
+<div class="sort-bar">
+  <label for="sortSelect">Ordenar por:</label>
+  <select id="sortSelect">
+    <option value="recent">Más reciente primero</option>
+    <option value="oldest">Más antiguo primero</option>
+  </select>
+</div>
+
 <section>
   <h2>Publicado</h2>
   <div class="sub">Ya está en la calle</div>
   <div class="cards">
-    <div class="piece-card" id="card-cnt0002">
+    <div class="piece-card" id="card-cnt0002" data-produced="2026-09-22T18:48:41.920117Z">
       <span class="tag">COMPARATIVA</span>
       <h3>Lo que ves en pantalla no es lo mismo que tener el oro en la mano.</h3>
       <p class="blurb">Oro físico vs. oro papel: la diferencia entre poseerlo y solo estar expuesto a su precio.</p>
       <a class="watch" href="https://drive.google.com/file/d/1XdDsyavLDQ1L_GDnStrwNtFXKmf4zWpO/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0001">
+    <div class="piece-card" id="card-cnt0001" data-produced="2026-09-22T18:48:41.909573Z">
       <span class="tag">PRODUCTO + GUÍA</span>
       <h3>Invertir en oro físico en España empieza por saber esto.</h3>
       <p class="blurb">Lingotes certificados como punto de entrada a la inversión en oro físico.</p>
@@ -149,55 +164,55 @@
   <h2>Listas para publicar</h2>
   <div class="sub">Videos informativos con clips 100% reales — terminados, con música y marca, esperando luz verde</div>
   <div class="cards">
-    <div class="piece-card" id="card-cnt0019">
+    <div class="piece-card" id="card-cnt0019" data-produced="2026-09-24T08:42:32.340231Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Un ETF de oro es papel. Esto es oro real, en sus manos.</h3>
       <p class="blurb">Pureza, seguridad y acompañamiento: el oro físico frente a otros instrumentos.</p>
       <a class="watch" href="https://drive.google.com/file/d/18QcU6JYRuLK0BTRAqUdIvNjQWZdzSBnE/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0018">
+    <div class="piece-card" id="card-cnt0018" data-produced="2026-09-24T08:42:32.330115Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>En 55 años, el oro superó ampliamente a la inflación.</h3>
       <p class="blurb">Oro frente a la inflación y la diversificación de cartera.</p>
       <a class="watch" href="https://drive.google.com/file/d/1g3jsXwBG1NfubVlxk9veBiALhzE9Jjv3/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0017">
+    <div class="piece-card" id="card-cnt0017" data-produced="2026-09-24T08:42:32.320468Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>A diferencia de una cuenta digital, nadie puede hackear un lingote de oro.</h3>
       <p class="blurb">Seguridad y custodia del oro físico.</p>
       <a class="watch" href="https://drive.google.com/file/d/1Rd4aGfm6V2DSVnMl5lrzMTQ37vHev5MX/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0016">
+    <div class="piece-card" id="card-cnt0016" data-produced="2026-09-24T08:42:32.309056Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Alquilar depende de inquilinos, reparaciones e impuestos.</h3>
       <p class="blurb">El oro físico no depende de nadie más que de usted.</p>
       <a class="watch" href="https://drive.google.com/file/d/13jAW_INdnL5YstP2yX7dfrY62T4sKNQm/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0015">
+    <div class="piece-card" id="card-cnt0015" data-produced="2026-09-24T08:42:32.301285Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>En España el oro de inversión está exento de IVA.</h3>
       <p class="blurb">Fiscalidad y diversificación: 5-10% de la cartera en oro, según los expertos.</p>
       <a class="watch" href="https://drive.google.com/file/d/1Niw_Ppd8s4Ly-qzXlMNNVH9RHv3WwQNR/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0014">
+    <div class="piece-card" id="card-cnt0014" data-produced="2026-09-24T08:42:32.292055Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>El oro de inversión es 99,9% metal puro.</h3>
       <p class="blurb">Un activo que se puede tocar, no solo mirar en un gráfico.</p>
       <a class="watch" href="https://drive.google.com/file/d/1zsgiCFEKPVGLobCOhfGZQUA9HEh5F5TR/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0013">
+    <div class="piece-card" id="card-cnt0013" data-produced="2026-09-24T08:42:32.281889Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>En 1971 la onza de oro costaba 35 dólares. Hoy supera los 4.300.</h3>
       <p class="blurb">La evolución histórica del precio del oro: +12.000% en 55 años.</p>
       <a class="watch" href="https://drive.google.com/file/d/16p5qt6HK73fWpp3RSDeOPbXLudye52GA/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0011">
+    <div class="piece-card" id="card-cnt0011" data-produced="2026-09-22T20:05:17.668238Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>El oro es reserva de valor desde hace miles de años.</h3>
       <p class="blurb">El oro a través del tiempo, con clips e imágenes 100% reales.</p>
       <a class="watch" href="https://drive.google.com/file/d/1ez_JOy6_EsTGVvu5Xx6XsLEOgggkmAb8/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0010">
+    <div class="piece-card" id="card-cnt0010" data-produced="2026-09-22T18:48:41.939805Z">
       <span class="tag">INFOGRÁFICO ANIMADO</span>
       <h3>Comprar hoy una casa es más barato que nunca (en oro)</h3>
       <p class="blurb">Una mirada a la vivienda frente al oro desde 1970 hasta hoy, con datos.</p>
@@ -210,7 +225,7 @@
   <h2>En preparación</h2>
   <div class="sub">Lo que estamos preparando ahora</div>
   <div class="cards">
-    <div class="piece-card" id="card-cnt0009">
+    <div class="piece-card" id="card-cnt0009" data-produced="2026-09-22T18:48:41.929807Z">
       <span class="pill pill-violet">EN PREPARACIÓN</span>
       <span class="tag">VIDEO CON IMÁGENES REALES</span>
       <h3>Del yacimiento al lingote</h3>
@@ -234,4 +249,30 @@
 
 
 
+<script>
+(function(){
+  var sel = document.getElementById('sortSelect');
+  if(!sel) return;
+  function applySort(mode){
+    document.querySelectorAll('.cards').forEach(function(container){
+      var cards = Array.prototype.slice.call(container.children);
+      if(cards.length < 2) return;
+      cards.sort(function(a,b){
+        var da = new Date(a.getAttribute('data-produced')||0).getTime();
+        var db = new Date(b.getAttribute('data-produced')||0).getTime();
+        return mode==='recent' ? db-da : da-db;
+      });
+      cards.forEach(function(c){ container.appendChild(c); });
+    });
+  }
+  var saved = null;
+  try{ saved = localStorage.getItem('reporte_sort'); }catch(e){}
+  if(saved==='recent' || saved==='oldest'){ sel.value = saved; }
+  sel.addEventListener('change', function(){
+    applySort(sel.value);
+    try{ localStorage.setItem('reporte_sort', sel.value); }catch(e){}
+  });
+  applySort(sel.value);
+})();
+</script>
 </body></html>

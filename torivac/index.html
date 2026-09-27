@@ -43,6 +43,13 @@
   .stat .v{font-size:34px;line-height:1;}
   .stat .l{font-size:11.5px;color:var(--text-faint);margin-top:6px;letter-spacing:.02em;}
 
+  .sort-bar{display:flex;align-items:center;gap:10px;margin:22px 0 -6px;font-size:12.5px;color:var(--text-faint);}
+  .sort-bar select{
+    background:var(--surface);border:1px solid var(--border);color:var(--text);
+    font-family:inherit;font-size:12.5px;padding:7px 10px;border-radius:8px;
+  }
+  .sort-bar select:focus{outline:2px solid var(--gold, var(--amber, #999));outline-offset:1px;}
+
   section{margin-bottom:44px;}
   section > h2{font-size:20px;margin-bottom:4px;}
   section > .sub{font-size:13px;color:var(--text-faint);margin-bottom:20px;}
@@ -109,35 +116,43 @@
   </div>
 </div>
 
+<div class="sort-bar">
+  <label for="sortSelect">Ordenar por:</label>
+  <select id="sortSelect">
+    <option value="recent">Más reciente primero</option>
+    <option value="oldest">Más antiguo primero</option>
+  </select>
+</div>
+
 <section>
   <h2>Listas para publicar</h2>
   <div class="sub">Videos informativos con clips 100% reales — terminados, con música y marca, esperando luz verde</div>
   <div class="cards">
-    <div class="piece-card" id="card-cnt0016">
+    <div class="piece-card" id="card-cnt0016" data-produced="2026-09-26T10:28:23.178298Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Resistencias de puesta a tierra y bancos de carga</h3>
       <p class="blurb">Pensadas para grupos electrógenos en fincas y edificios comerciales.</p>
       <a class="watch" href="https://drive.google.com/file/d/1yVF7ArmeV9ct28tx9wIFcbvux1OcDXV_/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0015">
+    <div class="piece-card" id="card-cnt0015" data-produced="2026-09-26T10:28:23.151819Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Variadores y estabilizadores de tensión</h3>
       <p class="blurb">Regulación de tensión para instalaciones industriales exigentes.</p>
       <a class="watch" href="https://drive.google.com/file/d/12z1di-S73FpSo49h23i7YzzmY1Hq9gwh/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0014">
+    <div class="piece-card" id="card-cnt0014" data-produced="2026-09-26T10:28:23.136975Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Dónde trabajan los transformadores Torivac</h3>
       <p class="blurb">Los sectores industriales donde trabajan los transformadores Torivac.</p>
       <a class="watch" href="https://drive.google.com/file/d/1fme_RGNXeq6WZrwNIe-86H3UnJguPIpV/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0013">
+    <div class="piece-card" id="card-cnt0013" data-produced="2026-09-26T10:28:23.107765Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Así se fabrica un transformador</h3>
       <p class="blurb">El proceso de fabricación de un transformador, paso a paso.</p>
       <a class="watch" href="https://drive.google.com/file/d/15IVuhTF4j3H94-uC20cHCpaqFgOKme3S/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
     </div>
-    <div class="piece-card" id="card-cnt0012">
+    <div class="piece-card" id="card-cnt0012" data-produced="2026-09-26T10:28:23.093008Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>60 años fabricando en Europa</h3>
       <p class="blurb">60 años de trayectoria fabricando transformadores en Europa.</p>
@@ -159,4 +174,30 @@
 
 <footer>Reporte de Santiso Marketing para Torivac.</footer>
 
+<script>
+(function(){
+  var sel = document.getElementById('sortSelect');
+  if(!sel) return;
+  function applySort(mode){
+    document.querySelectorAll('.cards').forEach(function(container){
+      var cards = Array.prototype.slice.call(container.children);
+      if(cards.length < 2) return;
+      cards.sort(function(a,b){
+        var da = new Date(a.getAttribute('data-produced')||0).getTime();
+        var db = new Date(b.getAttribute('data-produced')||0).getTime();
+        return mode==='recent' ? db-da : da-db;
+      });
+      cards.forEach(function(c){ container.appendChild(c); });
+    });
+  }
+  var saved = null;
+  try{ saved = localStorage.getItem('reporte_sort'); }catch(e){}
+  if(saved==='recent' || saved==='oldest'){ sel.value = saved; }
+  sel.addEventListener('change', function(){
+    applySort(sel.value);
+    try{ localStorage.setItem('reporte_sort', sel.value); }catch(e){}
+  });
+  applySort(sel.value);
+})();
+</script>
 </body></html>
