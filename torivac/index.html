@@ -61,6 +61,15 @@
   .approve-comment textarea{width:100%;background:var(--surface-2);border:1px solid var(--border);border-radius:9px;color:var(--text);font-family:inherit;font-size:13px;padding:9px 10px;min-height:60px;resize:vertical;box-sizing:border-box;}
   .approve-comment-actions{display:flex;gap:8px;margin-top:8px;}
   .approve-comment-actions .approve-btn{flex:1;}
+  .approve-btn.bad{background:transparent;border-color:#e0716b;color:#e0928d;}
+  .approve-btn.bad:hover{background:rgba(224,113,107,.12);}
+  .piece-actions{display:flex;}
+  .copy-toggle{background:none;border:none;color:var(--gold, var(--amber, #9dd));font:inherit;font-size:12px;font-weight:700;text-decoration:underline;cursor:pointer;padding:0;}
+  .copy-box{background:var(--surface-2);border:1px dashed var(--border);border-radius:9px;padding:12px;display:flex;flex-direction:column;gap:8px;}
+  .copy-box pre{white-space:pre-wrap;font-family:inherit;font-size:12.5px;color:var(--text);margin:0;line-height:1.5;}
+  .copy-copy-btn{align-self:flex-start;background:none;border:1px solid var(--border);color:var(--text-muted);font:inherit;font-size:11.5px;font-weight:700;padding:6px 10px;border-radius:7px;cursor:pointer;}
+  .copy-copy-btn:hover{border-color:var(--gold, var(--amber, #999));color:var(--text);}
+  .approve-feedback-note{font-size:11.5px;color:var(--text-faint);}
 
   section{margin-bottom:44px;}
   section > h2{font-size:20px;margin-bottom:4px;}
@@ -145,16 +154,26 @@
       <h3>Resistencias de puesta a tierra y bancos de carga</h3>
       <p class="blurb">Pensadas para grupos electrógenos en fincas y edificios comerciales.</p>
       <a class="watch" href="https://drive.google.com/file/d/1yVF7ArmeV9ct28tx9wIFcbvux1OcDXV_/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+            <div class="piece-actions">
+        <button class="copy-toggle" type="button" data-cid="CNT_0016">Ver copy</button>
+      </div>
+      <div class="copy-box" id="copy-CNT_0016" hidden>
+        <pre>Resistencias de puesta a tierra y bancos de carga, pensados también para grupos electrógenos en fincas y edificios comerciales.
+
+Conocé más en grupotorivac.com</pre>
+        <button class="copy-copy-btn" type="button" data-copy-target="copy-CNT_0016">Copiar texto</button>
+      </div>
       <div class="approve-row" data-cid="CNT_0016" data-brand="Torivac">
         <div class="approve-buttons">
           <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
-          <button class="approve-btn no" type="button">Necesita cambios</button>
+          <button class="approve-btn bad" type="button">&#10005; Desaprobar</button>
+          <button class="approve-btn no" type="button">Proponer mejora</button>
         </div>
         <div class="approve-decided" hidden></div>
         <div class="approve-comment" hidden>
-          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <textarea placeholder="&iquest;Qu&eacute; mejorar&iacute;as de esta pieza?"></textarea>
           <div class="approve-comment-actions">
-            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn send" type="button">Enviar propuesta</button>
             <button class="approve-btn cancel" type="button">Cancelar</button>
           </div>
         </div>
@@ -165,16 +184,26 @@
       <h3>Variadores y estabilizadores de tensión</h3>
       <p class="blurb">Regulación de tensión para instalaciones industriales exigentes.</p>
       <a class="watch" href="https://drive.google.com/file/d/12z1di-S73FpSo49h23i7YzzmY1Hq9gwh/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+            <div class="piece-actions">
+        <button class="copy-toggle" type="button" data-cid="CNT_0015">Ver copy</button>
+      </div>
+      <div class="copy-box" id="copy-CNT_0015" hidden>
+        <pre>Variadores y estabilizadores de tensión para instalaciones industriales que necesitan una regulación precisa.
+
+Conocé más en grupotorivac.com</pre>
+        <button class="copy-copy-btn" type="button" data-copy-target="copy-CNT_0015">Copiar texto</button>
+      </div>
       <div class="approve-row" data-cid="CNT_0015" data-brand="Torivac">
         <div class="approve-buttons">
           <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
-          <button class="approve-btn no" type="button">Necesita cambios</button>
+          <button class="approve-btn bad" type="button">&#10005; Desaprobar</button>
+          <button class="approve-btn no" type="button">Proponer mejora</button>
         </div>
         <div class="approve-decided" hidden></div>
         <div class="approve-comment" hidden>
-          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <textarea placeholder="&iquest;Qu&eacute; mejorar&iacute;as de esta pieza?"></textarea>
           <div class="approve-comment-actions">
-            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn send" type="button">Enviar propuesta</button>
             <button class="approve-btn cancel" type="button">Cancelar</button>
           </div>
         </div>
@@ -185,16 +214,26 @@
       <h3>Dónde trabajan los transformadores Torivac</h3>
       <p class="blurb">Los sectores industriales donde trabajan los transformadores Torivac.</p>
       <a class="watch" href="https://drive.google.com/file/d/1fme_RGNXeq6WZrwNIe-86H3UnJguPIpV/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+            <div class="piece-actions">
+        <button class="copy-toggle" type="button" data-cid="CNT_0014">Ver copy</button>
+      </div>
+      <div class="copy-box" id="copy-CNT_0014" hidden>
+        <pre>Los transformadores Torivac trabajan en distintos sectores industriales, donde la continuidad del servicio eléctrico es crítica.
+
+Conocé más en grupotorivac.com</pre>
+        <button class="copy-copy-btn" type="button" data-copy-target="copy-CNT_0014">Copiar texto</button>
+      </div>
       <div class="approve-row" data-cid="CNT_0014" data-brand="Torivac">
         <div class="approve-buttons">
           <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
-          <button class="approve-btn no" type="button">Necesita cambios</button>
+          <button class="approve-btn bad" type="button">&#10005; Desaprobar</button>
+          <button class="approve-btn no" type="button">Proponer mejora</button>
         </div>
         <div class="approve-decided" hidden></div>
         <div class="approve-comment" hidden>
-          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <textarea placeholder="&iquest;Qu&eacute; mejorar&iacute;as de esta pieza?"></textarea>
           <div class="approve-comment-actions">
-            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn send" type="button">Enviar propuesta</button>
             <button class="approve-btn cancel" type="button">Cancelar</button>
           </div>
         </div>
@@ -205,16 +244,26 @@
       <h3>Así se fabrica un transformador</h3>
       <p class="blurb">El proceso de fabricación de un transformador, paso a paso.</p>
       <a class="watch" href="https://drive.google.com/file/d/15IVuhTF4j3H94-uC20cHCpaqFgOKme3S/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+            <div class="piece-actions">
+        <button class="copy-toggle" type="button" data-cid="CNT_0013">Ver copy</button>
+      </div>
+      <div class="copy-box" id="copy-CNT_0013" hidden>
+        <pre>Así se fabrica un transformador Torivac, paso a paso, con control de calidad en cada etapa del proceso.
+
+Conocé más en grupotorivac.com</pre>
+        <button class="copy-copy-btn" type="button" data-copy-target="copy-CNT_0013">Copiar texto</button>
+      </div>
       <div class="approve-row" data-cid="CNT_0013" data-brand="Torivac">
         <div class="approve-buttons">
           <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
-          <button class="approve-btn no" type="button">Necesita cambios</button>
+          <button class="approve-btn bad" type="button">&#10005; Desaprobar</button>
+          <button class="approve-btn no" type="button">Proponer mejora</button>
         </div>
         <div class="approve-decided" hidden></div>
         <div class="approve-comment" hidden>
-          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <textarea placeholder="&iquest;Qu&eacute; mejorar&iacute;as de esta pieza?"></textarea>
           <div class="approve-comment-actions">
-            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn send" type="button">Enviar propuesta</button>
             <button class="approve-btn cancel" type="button">Cancelar</button>
           </div>
         </div>
@@ -225,16 +274,26 @@
       <h3>60 años fabricando en Europa</h3>
       <p class="blurb">60 años de trayectoria fabricando transformadores en Europa.</p>
       <a class="watch" href="https://drive.google.com/file/d/1kI6P4l-Ju0D6eS68OqVADoFNbcVzYg8h/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+            <div class="piece-actions">
+        <button class="copy-toggle" type="button" data-cid="CNT_0012">Ver copy</button>
+      </div>
+      <div class="copy-box" id="copy-CNT_0012" hidden>
+        <pre>60 años fabricando transformadores en Europa. Experiencia, respaldo técnico y fabricación propia.
+
+Conocé más en grupotorivac.com</pre>
+        <button class="copy-copy-btn" type="button" data-copy-target="copy-CNT_0012">Copiar texto</button>
+      </div>
       <div class="approve-row" data-cid="CNT_0012" data-brand="Torivac">
         <div class="approve-buttons">
           <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
-          <button class="approve-btn no" type="button">Necesita cambios</button>
+          <button class="approve-btn bad" type="button">&#10005; Desaprobar</button>
+          <button class="approve-btn no" type="button">Proponer mejora</button>
         </div>
         <div class="approve-decided" hidden></div>
         <div class="approve-comment" hidden>
-          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <textarea placeholder="&iquest;Qu&eacute; mejorar&iacute;as de esta pieza?"></textarea>
           <div class="approve-comment-actions">
-            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn send" type="button">Enviar propuesta</button>
             <button class="approve-btn cancel" type="button">Cancelar</button>
           </div>
         </div>
@@ -295,6 +354,11 @@
     try{ return new Date().toLocaleDateString('es-ES',{day:'2-digit',month:'short',year:'numeric'}); }
     catch(e){ return ''; }
   }
+  function labelFor(decision){
+    if(decision === 'Aprobado') return '\u2713 Aprobado';
+    if(decision === 'Desaprobado') return '\u2715 Desaprobado';
+    return 'Mejora propuesta';
+  }
   function render(row){
     var cid = row.getAttribute('data-cid');
     var state = load(cid);
@@ -305,7 +369,7 @@
     if(state){
       buttons.hidden = true;
       decided.hidden = false;
-      var label = state.decision === 'Aprobado' ? '\u2713 Aprobado' : 'Cambios solicitados';
+      var label = labelFor(state.decision);
       decided.innerHTML = '<span>'+label+' &middot; '+(state.fechaLabel||'')+'</span> <button type="button" class="approve-change">Cambiar</button>';
     } else {
       buttons.hidden = false;
@@ -332,6 +396,9 @@
     row.querySelector('.approve-btn.ok').addEventListener('click', function(){
       send(row, 'Aprobado', '');
     });
+    row.querySelector('.approve-btn.bad').addEventListener('click', function(){
+      send(row, 'Desaprobado', '');
+    });
     row.querySelector('.approve-btn.no').addEventListener('click', function(){
       row.querySelector('.approve-buttons').hidden = true;
       row.querySelector('.approve-comment').hidden = false;
@@ -343,13 +410,37 @@
     });
     row.querySelector('.approve-btn.send').addEventListener('click', function(){
       var val = row.querySelector('.approve-comment textarea').value.trim();
-      send(row, 'Necesita cambios', val);
+      send(row, 'Propuesta de mejora', val);
     });
     row.addEventListener('click', function(e){
       if(e.target.classList.contains('approve-change')){
         var cid = row.getAttribute('data-cid');
         try{ localStorage.removeItem('fb_'+cid); }catch(err){}
         render(row);
+      }
+    });
+  });
+  document.querySelectorAll('.copy-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var cid = btn.getAttribute('data-cid');
+      var box = document.getElementById('copy-'+cid);
+      if(!box) return;
+      box.hidden = !box.hidden;
+      btn.textContent = box.hidden ? 'Ver copy' : 'Ocultar copy';
+    });
+  });
+  document.querySelectorAll('.copy-copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = document.getElementById(btn.getAttribute('data-copy-target'));
+      if(!target) return;
+      var text = target.querySelector('pre').textContent;
+      var done = function(){ var old = btn.textContent; btn.textContent = 'Copiado \u2713'; setTimeout(function(){ btn.textContent = old; }, 1500); };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){
+          var ta = target.querySelector('pre');
+          var range = document.createRange(); range.selectNodeContents(ta);
+          var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+        });
       }
     });
   });
