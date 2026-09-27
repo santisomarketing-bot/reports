@@ -51,6 +51,18 @@
   }
   .sort-bar select:focus{outline:2px solid var(--gold, var(--amber, #999));outline-offset:1px;}
 
+  .approve-row{margin-top:2px;display:flex;flex-direction:column;gap:8px;}
+  .approve-buttons{display:flex;gap:8px;}
+  .approve-btn{flex:1;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-family:inherit;font-size:12.5px;font-weight:700;padding:9px 10px;border-radius:9px;cursor:pointer;}
+  .approve-btn:hover{border-color:var(--gold, var(--amber, #999));}
+  .approve-btn.ok{background:var(--gold, var(--amber, #8fd9a8));color:#161311;border-color:transparent;}
+  .approve-btn.send{background:var(--gold, var(--amber, #8fd9a8));color:#161311;border-color:transparent;}
+  .approve-decided{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--text-muted);background:var(--surface-2);border:1px solid var(--border);border-radius:9px;padding:9px 12px;}
+  .approve-change{background:none;border:none;color:var(--gold, var(--amber, #9dd));text-decoration:underline;font:inherit;font-size:11.5px;cursor:pointer;padding:0;}
+  .approve-comment textarea{width:100%;background:var(--surface-2);border:1px solid var(--border);border-radius:9px;color:var(--text);font-family:inherit;font-size:13px;padding:9px 10px;min-height:60px;resize:vertical;box-sizing:border-box;}
+  .approve-comment-actions{display:flex;gap:8px;margin-top:8px;}
+  .approve-comment-actions .approve-btn{flex:1;}
+
   section{margin-bottom:44px;}
   section > h2{font-size:20px;margin-bottom:4px;}
   section > .sub{font-size:13px;color:var(--text-faint);margin-bottom:20px;}
@@ -169,54 +181,180 @@
       <h3>Un ETF de oro es papel. Esto es oro real, en sus manos.</h3>
       <p class="blurb">Pureza, seguridad y acompañamiento: el oro físico frente a otros instrumentos.</p>
       <a class="watch" href="https://drive.google.com/file/d/18QcU6JYRuLK0BTRAqUdIvNjQWZdzSBnE/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0019" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0018" data-produced="2026-09-24T08:42:32.330115Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>En 55 años, el oro superó ampliamente a la inflación.</h3>
       <p class="blurb">Oro frente a la inflación y la diversificación de cartera.</p>
       <a class="watch" href="https://drive.google.com/file/d/1g3jsXwBG1NfubVlxk9veBiALhzE9Jjv3/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0018" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0017" data-produced="2026-09-24T08:42:32.320468Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>A diferencia de una cuenta digital, nadie puede hackear un lingote de oro.</h3>
       <p class="blurb">Seguridad y custodia del oro físico.</p>
       <a class="watch" href="https://drive.google.com/file/d/1Rd4aGfm6V2DSVnMl5lrzMTQ37vHev5MX/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0017" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0016" data-produced="2026-09-24T08:42:32.309056Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Alquilar depende de inquilinos, reparaciones e impuestos.</h3>
       <p class="blurb">El oro físico no depende de nadie más que de usted.</p>
       <a class="watch" href="https://drive.google.com/file/d/13jAW_INdnL5YstP2yX7dfrY62T4sKNQm/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0016" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0015" data-produced="2026-09-24T08:42:32.301285Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>En España el oro de inversión está exento de IVA.</h3>
       <p class="blurb">Fiscalidad y diversificación: 5-10% de la cartera en oro, según los expertos.</p>
       <a class="watch" href="https://drive.google.com/file/d/1Niw_Ppd8s4Ly-qzXlMNNVH9RHv3WwQNR/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0015" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0014" data-produced="2026-09-24T08:42:32.292055Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>El oro de inversión es 99,9% metal puro.</h3>
       <p class="blurb">Un activo que se puede tocar, no solo mirar en un gráfico.</p>
       <a class="watch" href="https://drive.google.com/file/d/1zsgiCFEKPVGLobCOhfGZQUA9HEh5F5TR/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0014" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0013" data-produced="2026-09-24T08:42:32.281889Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>En 1971 la onza de oro costaba 35 dólares. Hoy supera los 4.300.</h3>
       <p class="blurb">La evolución histórica del precio del oro: +12.000% en 55 años.</p>
       <a class="watch" href="https://drive.google.com/file/d/16p5qt6HK73fWpp3RSDeOPbXLudye52GA/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0013" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0011" data-produced="2026-09-22T20:05:17.668238Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>El oro es reserva de valor desde hace miles de años.</h3>
       <p class="blurb">El oro a través del tiempo, con clips e imágenes 100% reales.</p>
       <a class="watch" href="https://drive.google.com/file/d/1ez_JOy6_EsTGVvu5Xx6XsLEOgggkmAb8/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0011" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0010" data-produced="2026-09-22T18:48:41.939805Z">
       <span class="tag">INFOGRÁFICO ANIMADO</span>
       <h3>Comprar hoy una casa es más barato que nunca (en oro)</h3>
       <p class="blurb">Una mirada a la vivienda frente al oro desde 1970 hasta hoy, con datos.</p>
       <a class="watch" href="https://drive.google.com/file/d/1l1B6OnaGT3OjEwECLoQYvJ5pRzZk3NPI/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0010" data-brand="Quilatz">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -273,6 +411,79 @@
     try{ localStorage.setItem('reporte_sort', sel.value); }catch(e){}
   });
   applySort(sel.value);
+})();
+</script>
+<script>
+(function(){
+  var WEBHOOK = 'https://hook.eu2.make.com/aab949yrewab7hfvhum9ece4ywxwjfgc';
+  function load(cid){
+    try{ return JSON.parse(localStorage.getItem('fb_'+cid)||'null'); }catch(e){ return null; }
+  }
+  function save(cid, obj){
+    try{ localStorage.setItem('fb_'+cid, JSON.stringify(obj)); }catch(e){}
+  }
+  function fmtNow(){
+    try{ return new Date().toLocaleDateString('es-ES',{day:'2-digit',month:'short',year:'numeric'}); }
+    catch(e){ return ''; }
+  }
+  function render(row){
+    var cid = row.getAttribute('data-cid');
+    var state = load(cid);
+    var buttons = row.querySelector('.approve-buttons');
+    var decided = row.querySelector('.approve-decided');
+    var comment = row.querySelector('.approve-comment');
+    comment.hidden = true;
+    if(state){
+      buttons.hidden = true;
+      decided.hidden = false;
+      var label = state.decision === 'Aprobado' ? '\u2713 Aprobado' : 'Cambios solicitados';
+      decided.innerHTML = '<span>'+label+' &middot; '+(state.fechaLabel||'')+'</span> <button type="button" class="approve-change">Cambiar</button>';
+    } else {
+      buttons.hidden = false;
+      decided.hidden = true;
+    }
+  }
+  function send(row, decision, comentario){
+    var cid = row.getAttribute('data-cid');
+    var brand = row.getAttribute('data-brand');
+    var payload = {
+      contentId: cid, brand: brand, decision: decision,
+      comentario: comentario||'', fecha: new Date().toISOString(), origen: location.href
+    };
+    fetch(WEBHOOK, {
+      method:'POST', mode:'cors',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    }).catch(function(){});
+    save(cid, {decision:decision, fechaLabel: fmtNow()});
+    render(row);
+  }
+  document.querySelectorAll('.approve-row').forEach(function(row){
+    render(row);
+    row.querySelector('.approve-btn.ok').addEventListener('click', function(){
+      send(row, 'Aprobado', '');
+    });
+    row.querySelector('.approve-btn.no').addEventListener('click', function(){
+      row.querySelector('.approve-buttons').hidden = true;
+      row.querySelector('.approve-comment').hidden = false;
+      row.querySelector('.approve-comment textarea').focus();
+    });
+    row.querySelector('.approve-btn.cancel').addEventListener('click', function(){
+      row.querySelector('.approve-comment').hidden = true;
+      row.querySelector('.approve-buttons').hidden = false;
+    });
+    row.querySelector('.approve-btn.send').addEventListener('click', function(){
+      var val = row.querySelector('.approve-comment textarea').value.trim();
+      send(row, 'Necesita cambios', val);
+    });
+    row.addEventListener('click', function(e){
+      if(e.target.classList.contains('approve-change')){
+        var cid = row.getAttribute('data-cid');
+        try{ localStorage.removeItem('fb_'+cid); }catch(err){}
+        render(row);
+      }
+    });
+  });
 })();
 </script>
 </body></html>

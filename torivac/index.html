@@ -50,6 +50,18 @@
   }
   .sort-bar select:focus{outline:2px solid var(--gold, var(--amber, #999));outline-offset:1px;}
 
+  .approve-row{margin-top:2px;display:flex;flex-direction:column;gap:8px;}
+  .approve-buttons{display:flex;gap:8px;}
+  .approve-btn{flex:1;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-family:inherit;font-size:12.5px;font-weight:700;padding:9px 10px;border-radius:9px;cursor:pointer;}
+  .approve-btn:hover{border-color:var(--gold, var(--amber, #999));}
+  .approve-btn.ok{background:var(--gold, var(--amber, #8fd9a8));color:#161311;border-color:transparent;}
+  .approve-btn.send{background:var(--gold, var(--amber, #8fd9a8));color:#161311;border-color:transparent;}
+  .approve-decided{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--text-muted);background:var(--surface-2);border:1px solid var(--border);border-radius:9px;padding:9px 12px;}
+  .approve-change{background:none;border:none;color:var(--gold, var(--amber, #9dd));text-decoration:underline;font:inherit;font-size:11.5px;cursor:pointer;padding:0;}
+  .approve-comment textarea{width:100%;background:var(--surface-2);border:1px solid var(--border);border-radius:9px;color:var(--text);font-family:inherit;font-size:13px;padding:9px 10px;min-height:60px;resize:vertical;box-sizing:border-box;}
+  .approve-comment-actions{display:flex;gap:8px;margin-top:8px;}
+  .approve-comment-actions .approve-btn{flex:1;}
+
   section{margin-bottom:44px;}
   section > h2{font-size:20px;margin-bottom:4px;}
   section > .sub{font-size:13px;color:var(--text-faint);margin-bottom:20px;}
@@ -133,30 +145,100 @@
       <h3>Resistencias de puesta a tierra y bancos de carga</h3>
       <p class="blurb">Pensadas para grupos electrógenos en fincas y edificios comerciales.</p>
       <a class="watch" href="https://drive.google.com/file/d/1yVF7ArmeV9ct28tx9wIFcbvux1OcDXV_/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0016" data-brand="Torivac">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0015" data-produced="2026-09-26T10:28:23.151819Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Variadores y estabilizadores de tensión</h3>
       <p class="blurb">Regulación de tensión para instalaciones industriales exigentes.</p>
       <a class="watch" href="https://drive.google.com/file/d/12z1di-S73FpSo49h23i7YzzmY1Hq9gwh/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0015" data-brand="Torivac">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0014" data-produced="2026-09-26T10:28:23.136975Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Dónde trabajan los transformadores Torivac</h3>
       <p class="blurb">Los sectores industriales donde trabajan los transformadores Torivac.</p>
       <a class="watch" href="https://drive.google.com/file/d/1fme_RGNXeq6WZrwNIe-86H3UnJguPIpV/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0014" data-brand="Torivac">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0013" data-produced="2026-09-26T10:28:23.107765Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>Así se fabrica un transformador</h3>
       <p class="blurb">El proceso de fabricación de un transformador, paso a paso.</p>
       <a class="watch" href="https://drive.google.com/file/d/15IVuhTF4j3H94-uC20cHCpaqFgOKme3S/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0013" data-brand="Torivac">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="piece-card" id="card-cnt0012" data-produced="2026-09-26T10:28:23.093008Z">
       <span class="tag">VIDEO INFORMATIVO</span>
       <h3>60 años fabricando en Europa</h3>
       <p class="blurb">60 años de trayectoria fabricando transformadores en Europa.</p>
       <a class="watch" href="https://drive.google.com/file/d/1kI6P4l-Ju0D6eS68OqVADoFNbcVzYg8h/view" target="_blank" rel="noopener">▶ Ver video <span class="arrow">→</span></a>
+      <div class="approve-row" data-cid="CNT_0012" data-brand="Torivac">
+        <div class="approve-buttons">
+          <button class="approve-btn ok" type="button">&#10003; Aprobar</button>
+          <button class="approve-btn no" type="button">Necesita cambios</button>
+        </div>
+        <div class="approve-decided" hidden></div>
+        <div class="approve-comment" hidden>
+          <textarea placeholder="&iquest;Qu&eacute; habr&iacute;a que cambiar?"></textarea>
+          <div class="approve-comment-actions">
+            <button class="approve-btn send" type="button">Enviar</button>
+            <button class="approve-btn cancel" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -198,6 +280,79 @@
     try{ localStorage.setItem('reporte_sort', sel.value); }catch(e){}
   });
   applySort(sel.value);
+})();
+</script>
+<script>
+(function(){
+  var WEBHOOK = 'https://hook.eu2.make.com/aab949yrewab7hfvhum9ece4ywxwjfgc';
+  function load(cid){
+    try{ return JSON.parse(localStorage.getItem('fb_'+cid)||'null'); }catch(e){ return null; }
+  }
+  function save(cid, obj){
+    try{ localStorage.setItem('fb_'+cid, JSON.stringify(obj)); }catch(e){}
+  }
+  function fmtNow(){
+    try{ return new Date().toLocaleDateString('es-ES',{day:'2-digit',month:'short',year:'numeric'}); }
+    catch(e){ return ''; }
+  }
+  function render(row){
+    var cid = row.getAttribute('data-cid');
+    var state = load(cid);
+    var buttons = row.querySelector('.approve-buttons');
+    var decided = row.querySelector('.approve-decided');
+    var comment = row.querySelector('.approve-comment');
+    comment.hidden = true;
+    if(state){
+      buttons.hidden = true;
+      decided.hidden = false;
+      var label = state.decision === 'Aprobado' ? '\u2713 Aprobado' : 'Cambios solicitados';
+      decided.innerHTML = '<span>'+label+' &middot; '+(state.fechaLabel||'')+'</span> <button type="button" class="approve-change">Cambiar</button>';
+    } else {
+      buttons.hidden = false;
+      decided.hidden = true;
+    }
+  }
+  function send(row, decision, comentario){
+    var cid = row.getAttribute('data-cid');
+    var brand = row.getAttribute('data-brand');
+    var payload = {
+      contentId: cid, brand: brand, decision: decision,
+      comentario: comentario||'', fecha: new Date().toISOString(), origen: location.href
+    };
+    fetch(WEBHOOK, {
+      method:'POST', mode:'cors',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    }).catch(function(){});
+    save(cid, {decision:decision, fechaLabel: fmtNow()});
+    render(row);
+  }
+  document.querySelectorAll('.approve-row').forEach(function(row){
+    render(row);
+    row.querySelector('.approve-btn.ok').addEventListener('click', function(){
+      send(row, 'Aprobado', '');
+    });
+    row.querySelector('.approve-btn.no').addEventListener('click', function(){
+      row.querySelector('.approve-buttons').hidden = true;
+      row.querySelector('.approve-comment').hidden = false;
+      row.querySelector('.approve-comment textarea').focus();
+    });
+    row.querySelector('.approve-btn.cancel').addEventListener('click', function(){
+      row.querySelector('.approve-comment').hidden = true;
+      row.querySelector('.approve-buttons').hidden = false;
+    });
+    row.querySelector('.approve-btn.send').addEventListener('click', function(){
+      var val = row.querySelector('.approve-comment textarea').value.trim();
+      send(row, 'Necesita cambios', val);
+    });
+    row.addEventListener('click', function(e){
+      if(e.target.classList.contains('approve-change')){
+        var cid = row.getAttribute('data-cid');
+        try{ localStorage.removeItem('fb_'+cid); }catch(err){}
+        render(row);
+      }
+    });
+  });
 })();
 </script>
 </body></html>
